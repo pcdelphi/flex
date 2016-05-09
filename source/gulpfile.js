@@ -23,8 +23,9 @@ gulp.task('sass', function() {
 
 
 gulp.task('watch', function() {
-  gulp.watch(['layout/*.html', 'pages/*.html'], ['build']);
-  gulp.watch(['styles/*.scss'],['sass']);
+    gulp.watch(['**/*.html'], ['build']);
+    // gulp.watch(['layout/*.html', 'pages/*.html'], ['build']);
+    gulp.watch(['styles/*.scss'],['sass']);
 
 })
 
